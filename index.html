@@ -1,0 +1,1990 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Claribella Joyería | Alta Joyería en Oro y Plata — Honduras</title>
+  <meta name="description" content="Descubre la colección curada de Claribella Joyería en Honduras. Aritos, cadenas, relojes y anillos en oro y plata con asesoría personalizada y envíos asegurados." />
+
+  <!-- Tipografías Google Fonts: Cormorant Garamond (Editorial Lujo) + Plus Jakarta Sans (UI Moderna) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            ivory: '#FAF8F5',
+            cream: '#F3EFEA',
+            obsidian: '#121212',
+            charcoal: '#1E1E1E',
+            champagne: '#C5A059',
+            champagneDark: '#A8843E',
+            champagneLight: '#DFC793',
+            stoneMuted: '#6B665F'
+          },
+          fontFamily: {
+            serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif']
+          },
+          boxShadow: {
+            luxury: '0 20px 50px -15px rgba(18, 18, 18, 0.08)',
+            cardHover: '0 25px 60px -15px rgba(197, 160, 89, 0.18)'
+          }
+        }
+      }
+    };
+  </script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <style>
+    /* Estilos base y microinteracciones refinadas */
+    body {
+      background-color: #FAF8F5;
+      color: #121212;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      overflow-x: hidden;
+    }
+
+    .font-editorial {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+    }
+
+    /* Barra de desplazamiento elegante */
+    ::-webkit-scrollbar {
+      width: 7px;
+      height: 7px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #F3EFEA;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #C5A059;
+      border-radius: 9999px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #A8843E;
+    }
+
+    /* Animaciones suaves */
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(16px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes pulseGold {
+      0%, 100% {
+        box-shadow: 0 0 0 0 rgba(197, 160, 89, 0.45);
+      }
+      50% {
+        box-shadow: 0 0 0 10px rgba(197, 160, 89, 0);
+      }
+    }
+
+    @keyframes typingDot {
+      0%, 60%, 100% { transform: translateY(0); opacity: 0.4; }
+      30% { transform: translateY(-4px); opacity: 1; }
+    }
+
+    .animate-fade-up {
+      animation: fadeUp 0.55s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    }
+
+    .pulse-gold {
+      animation: pulseGold 2.8s infinite;
+    }
+
+    .typing-dot:nth-child(1) { animation: typingDot 1.2s infinite 0s; }
+    .typing-dot:nth-child(2) { animation: typingDot 1.2s infinite 0.2s; }
+    .typing-dot:nth-child(3) { animation: typingDot 1.2s infinite 0.4s; }
+
+    /* Efecto zoom en modal de imagen */
+    .zoom-container {
+      overflow: hidden;
+    }
+    .zoom-container img {
+      transition: transform 0.65s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .zoom-container:hover img {
+      transform: scale(1.14);
+    }
+
+    /* Patrón sutil de fondo lujo */
+    .luxury-pattern {
+      background-image: radial-gradient(rgba(197, 160, 89, 0.14) 1px, transparent 1px);
+      background-size: 28px 28px;
+    }
+  </style>
+</head>
+<body class="antialiased selection:bg-champagne selection:text-white">
+
+  <!-- Barra Superior Informativa -->
+  <div class="bg-obsidian text-ivory text-xs py-2 px-4 text-center tracking-wider border-b border-white/10">
+    <span class="text-champagne font-medium">CLARIBELLA JOYERÍA HONDURAS</span>
+    <span class="mx-2 text-white/30">•</span>
+    <span>Oro y Plata Seleccionados • Envíos Asegurados a Todo el País • Atención Directa por WhatsApp</span>
+  </div>
+
+  <!-- Navegación Fija (Sticky Navbar) -->
+  <header id="navbar" class="sticky top-0 z-40 bg-ivory/95 backdrop-blur-md border-b border-champagne/20 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <!-- Logo Marca -->
+        <a href="#inicio" class="flex items-center gap-3 group focus:outline-none">
+          <div class="w-10 h-10 rounded-full bg-obsidian border border-champagne flex items-center justify-center text-champagne transition-transform duration-300 group-hover:scale-105">
+            <i data-lucide="gem" class="w-5 h-5"></i>
+          </div>
+          <div>
+            <span class="font-editorial text-2xl sm:text-3xl font-bold tracking-wide text-obsidian block leading-none">CLARIBELLA</span>
+            <span class="text-[10px] uppercase tracking-[0.28em] text-champagneDark font-semibold block mt-0.5">Alta Joyería • HN</span>
+          </div>
+        </a>
+
+        <!-- Enlaces Desktop -->
+        <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-obsidian/80">
+          <a href="#inicio" class="hover:text-champagneDark transition-colors py-1 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[1.5px] after:bg-champagne hover:after:w-full after:transition-all">Inicio</a>
+          <a href="#destacados" class="hover:text-champagneDark transition-colors py-1 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[1.5px] after:bg-champagne hover:after:w-full after:transition-all">Destacados</a>
+          <a href="#quienes-somos" class="hover:text-champagneDark transition-colors py-1 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[1.5px] after:bg-champagne hover:after:w-full after:transition-all">Quiénes Somos</a>
+          <a href="#catalogo" class="hover:text-champagneDark transition-colors py-1 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[1.5px] after:bg-champagne hover:after:w-full after:transition-all">Catálogo</a>
+          <a href="#contacto" class="hover:text-champagneDark transition-colors py-1 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[1.5px] after:bg-champagne hover:after:w-full after:transition-all">Contáctanos</a>
+        </nav>
+
+        <!-- Acciones Derecha: Carrito y Menú Móvil -->
+        <div class="flex items-center gap-3">
+          <button
+            id="open-cart-btn"
+            onclick="toggleCart(true)"
+            aria-label="Abrir carrito de compras"
+            class="relative inline-flex items-center gap-2.5 bg-obsidian hover:bg-charcoal text-ivory px-4 py-2.5 rounded-full text-sm font-medium transition-all duration-200 shadow-sm hover:shadow-md active:scale-95"
+          >
+            <i data-lucide="shopping-bag" class="w-4 h-4 text-champagne"></i>
+            <span class="hidden sm:inline">Carrito</span>
+            <span id="cart-badge" class="inline-flex items-center justify-center min-w-[22px] h-[22px] px-1.5 text-xs font-bold rounded-full bg-champagne text-obsidian transition-transform duration-200">
+              0
+            </span>
+          </button>
+
+          <!-- Botón Hamburguesa Móvil -->
+          <button
+            id="mobile-menu-btn"
+            onclick="toggleMobileMenu()"
+            aria-label="Abrir menú de navegación"
+            class="md:hidden p-2.5 rounded-xl border border-champagne/30 text-obsidian hover:bg-cream transition-colors"
+          >
+            <i data-lucide="menu" class="w-5 h-5"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Menú Desplegable Móvil -->
+    <div id="mobile-menu" class="hidden md:hidden bg-ivory border-b border-champagne/20 px-4 pt-2 pb-5 space-y-2 shadow-lg">
+      <a href="#inicio" onclick="toggleMobileMenu(false)" class="block px-4 py-2.5 rounded-xl text-sm font-medium text-obsidian hover:bg-cream">Inicio</a>
+      <a href="#destacados" onclick="toggleMobileMenu(false)" class="block px-4 py-2.5 rounded-xl text-sm font-medium text-obsidian hover:bg-cream">Piezas Destacadas</a>
+      <a href="#quienes-somos" onclick="toggleMobileMenu(false)" class="block px-4 py-2.5 rounded-xl text-sm font-medium text-obsidian hover:bg-cream">Quiénes Somos</a>
+      <a href="#catalogo" onclick="toggleMobileMenu(false)" class="block px-4 py-2.5 rounded-xl text-sm font-medium text-obsidian hover:bg-cream">Catálogo Completo</a>
+      <a href="#contacto" onclick="toggleMobileMenu(false)" class="block px-4 py-2.5 rounded-xl text-sm font-medium text-obsidian hover:bg-cream">Contáctanos</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==================== 1. HOME / HERO ==================== -->
+    <section id="inicio" class="relative overflow-hidden luxury-pattern border-b border-champagne/15">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14 sm:py-20 lg:py-24">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          <!-- Columna Editorial -->
+          <div class="lg:col-span-7 space-y-6 animate-fade-up">
+            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-cream border border-champagne/35 text-xs font-semibold tracking-widest uppercase text-champagneDark">
+              <span class="w-2 h-2 rounded-full bg-champagne"></span>
+              Colección Exclusiva en Honduras
+            </div>
+
+            <h1 class="font-editorial text-4xl sm:text-5xl lg:text-6xl font-bold text-obsidian leading-[1.08] tracking-tight">
+              Elegancia eterna en <span class="italic text-champagneDark font-semibold">Oro y Plata</span> que trasciende generaciones.
+            </h1>
+
+            <p class="text-base sm:text-lg text-stoneMuted max-w-2xl leading-relaxed">
+              En <strong class="text-obsidian font-semibold">Claribella Joyería</strong> curamos piezas auténticas —aritos, cadenas, relojes y anillos— diseñadas para celebrar tus momentos más memorables en Honduras con transparencia, respaldo y atención personalizada.
+            </p>
+
+            <!-- CTAs Principales -->
+            <div class="flex flex-wrap items-center gap-4 pt-2">
+              <a
+                href="#catalogo"
+                class="inline-flex items-center justify-center gap-2.5 bg-obsidian hover:bg-charcoal text-ivory px-7 py-4 rounded-full text-sm font-semibold tracking-wide transition-all duration-300 shadow-luxury hover:-translate-y-0.5"
+              >
+                <span>Ver catálogo</span>
+                <i data-lucide="arrow-right" class="w-4 h-4 text-champagne"></i>
+              </a>
+
+              <a
+                href="https://wa.me/50496005320?text=Hola%20%F0%9F%98%8A%20Me%20interesa%20recibir%20asesor%C3%ADa%20personalizada%20sobre%20las%20joyas%20de%20Claribella%20Joyer%C3%ADa."
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-flex items-center justify-center gap-2.5 bg-white hover:bg-cream text-obsidian border border-champagne/40 px-6 py-4 rounded-full text-sm font-semibold transition-all duration-300"
+              >
+                <i data-lucide="message-circle" class="w-4 h-4 text-emerald-600"></i>
+                <span>Asesoría por WhatsApp</span>
+              </a>
+            </div>
+
+            <!-- Indicadores de Confianza -->
+            <div class="grid grid-cols-3 gap-4 pt-6 border-t border-champagne/20 max-w-lg">
+              <div>
+                <p class="font-editorial text-2xl sm:text-3xl font-bold text-obsidian">100%</p>
+                <p class="text-xs text-stoneMuted">Oro y Plata Verificados</p>
+              </div>
+              <div>
+                <p class="font-editorial text-2xl sm:text-3xl font-bold text-obsidian">HN</p>
+                <p class="text-xs text-stoneMuted">Envíos Asegurados</p>
+              </div>
+              <div>
+                <p class="font-editorial text-2xl sm:text-3xl font-bold text-obsidian">24/7</p>
+                <p class="text-xs text-stoneMuted">Cotización Directa</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Columna Visual Vitrina Hero -->
+          <div class="lg:col-span-5">
+            <div class="relative bg-white p-4 sm:p-5 rounded-3xl shadow-luxury border border-champagne/25">
+              <div class="relative aspect-[4/5] rounded-2xl overflow-hidden bg-cream">
+                <img
+                  src="https://lh3.googleusercontent.com/d/1NuF7vV2O6iKAffTOmAnIH92OtaYb_NMh"
+                  alt="Collar Diamante - Claribella Joyería"
+                  onerror="handleImgError(this, 'Collar Diamante')"
+                  class="w-full h-full object-cover object-center transition-transform duration-700 hover:scale-105"
+                />
+                <div class="absolute inset-0 bg-gradient-to-t from-obsidian/75 via-transparent to-transparent"></div>
+                <div class="absolute top-4 left-4">
+                  <span class="px-3 py-1 rounded-full text-[11px] font-semibold uppercase tracking-wider bg-obsidian/85 text-champagne backdrop-blur-sm border border-champagne/30">
+                    Cadenas • Pieza Insignia
+                  </span>
+                </div>
+                <div class="absolute bottom-5 left-5 right-5 text-ivory flex items-end justify-between gap-3">
+                  <div>
+                    <p class="text-xs uppercase tracking-widest text-champagneLight">Claribella</p>
+                    <h2 class="font-editorial text-2xl font-bold">Collar Diamante</h2>
+                    <p class="text-xs text-ivory/80">Oro Rosa, con Diamante • Gota de agua</p>
+                  </div>
+                  <div class="text-right">
+                    <span class="block text-lg font-bold text-champagneLight">L 12,000</span>
+                    <button onclick="openProductModal(1)" class="mt-1 text-xs underline text-ivory hover:text-champagne transition-colors">
+                      Ver detalle
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== BENEFICIOS Y GARANTÍAS ==================== -->
+    <section class="py-14 bg-white border-b border-champagne/15">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <!-- Beneficio 1 -->
+          <div class="p-6 rounded-2xl bg-ivory border border-champagne/20 hover:border-champagne transition-all duration-300">
+            <div class="w-11 h-11 rounded-xl bg-obsidian text-champagne flex items-center justify-center mb-4">
+              <i data-lucide="shield-check" class="w-5 h-5"></i>
+            </div>
+            <h3 class="font-editorial text-xl font-bold text-obsidian mb-1.5">Autenticidad Certificada</h3>
+            <p class="text-sm text-stoneMuted leading-relaxed">
+              Cada joya especifica con claridad su material: Oro, Oro Italiano, Oro Blanco Italiano, Oro Rosa y Plata.
+            </p>
+          </div>
+
+          <!-- Beneficio 2 -->
+          <div class="p-6 rounded-2xl bg-ivory border border-champagne/20 hover:border-champagne transition-all duration-300">
+            <div class="w-11 h-11 rounded-xl bg-obsidian text-champagne flex items-center justify-center mb-4">
+              <i data-lucide="truck" class="w-5 h-5"></i>
+            </div>
+            <h3 class="font-editorial text-xl font-bold text-obsidian mb-1.5">Envíos Asegurados en HN</h3>
+            <p class="text-sm text-stoneMuted leading-relaxed">
+              Entregas protegidas en Tegucigalpa, San Pedro Sula y principales ciudades de Honduras con empaque de lujo.
+            </p>
+          </div>
+
+          <!-- Beneficio 3 -->
+          <div class="p-6 rounded-2xl bg-ivory border border-champagne/20 hover:border-champagne transition-all duration-300">
+            <div class="w-11 h-11 rounded-xl bg-obsidian text-champagne flex items-center justify-center mb-4">
+              <i data-lucide="sparkles" class="w-5 h-5"></i>
+            </div>
+            <h3 class="font-editorial text-xl font-bold text-obsidian mb-1.5">Asesoría Personalizada</h3>
+            <p class="text-sm text-stoneMuted leading-relaxed">
+              Reserva o cotiza sin compromisos vía WhatsApp Business para coordinar llamada, fotos adicionales o visita.
+            </p>
+          </div>
+
+          <!-- Beneficio 4 -->
+          <div class="p-6 rounded-2xl bg-ivory border border-champagne/20 hover:border-champagne transition-all duration-300">
+            <div class="w-11 h-11 rounded-xl bg-obsidian text-champagne flex items-center justify-center mb-4">
+              <i data-lucide="award" class="w-5 h-5"></i>
+            </div>
+            <h3 class="font-editorial text-xl font-bold text-obsidian mb-1.5">Respaldo y Garantía</h3>
+            <p class="text-sm text-stoneMuted leading-relaxed">
+              Transparencia absoluta en precios en Lempiras (L) y acompañamiento postventa para el cuidado de tus piezas.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== PIEZAS DESTACADAS POR CATEGORÍA ==================== -->
+    <section id="destacados" class="py-16 sm:py-20 bg-ivory border-b border-champagne/15">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-4">
+          <div>
+            <span class="text-xs font-semibold uppercase tracking-[0.25em] text-champagneDark">Curaduría Claribella</span>
+            <h2 class="font-editorial text-3xl sm:text-4xl font-bold text-obsidian mt-1">Piezas Destacadas del Catálogo</h2>
+          </div>
+          <p class="text-sm text-stoneMuted max-w-md">
+            Explora nuestras piezas disponibles en <strong class="text-obsidian">Aritos, Cadenas, Relojes y Anillos</strong> con fotografías reales de inventario.
+          </p>
+        </div>
+
+        <!-- Grid Destacados (generado dinámicamente desde el catálogo) -->
+        <div id="featured-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-5">
+          <!-- Se renderiza vía JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 2. QUIÉNES SOMOS ==================== -->
+    <section id="quienes-somos" class="py-16 sm:py-24 bg-white border-b border-champagne/15">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+          <!-- Historia y Pilares -->
+          <div class="lg:col-span-6 space-y-6">
+            <span class="text-xs font-semibold uppercase tracking-[0.25em] text-champagneDark">Nuestra Esencia</span>
+            <h2 class="font-editorial text-3xl sm:text-4xl lg:text-5xl font-bold text-obsidian leading-tight">
+              Tradición, transparencia y brillo auténtico para Honduras.
+            </h2>
+            <p class="text-stoneMuted leading-relaxed">
+              <strong class="text-obsidian">Claribella Joyería</strong> nace con la visión de acercar alta joyería en oro y plata seleccionada al mercado hondureño, combinando elegancia atemporal con una experiencia de compra cercana, segura y transparente.
+            </p>
+            <p class="text-stoneMuted leading-relaxed">
+              Cada pieza pasa por un cuidadoso proceso de importación y curaduría, verificando acabados en Oro Italiano, Oro Blanco Italiano, Oro Rosa, Oro tradicional y Plata, asegurando que lo que ves en nuestro catálogo digital corresponde fielmente a la joya que recibes.
+            </p>
+
+            <!-- Pilares -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-3">
+              <div class="p-4 rounded-2xl bg-ivory border border-champagne/20">
+                <h4 class="font-semibold text-obsidian text-sm flex items-center gap-2">
+                  <i data-lucide="globe" class="w-4 h-4 text-champagneDark"></i>
+                  Importación Curada
+                </h4>
+                <p class="text-xs text-stoneMuted mt-1.5 leading-relaxed">
+                  Selección directa de diseños clásicos y juveniles con estándares internacionales de orfebrería.
+                </p>
+              </div>
+              <div class="p-4 rounded-2xl bg-ivory border border-champagne/20">
+                <h4 class="font-semibold text-obsidian text-sm flex items-center gap-2">
+                  <i data-lucide="lock" class="w-4 h-4 text-champagneDark"></i>
+                  Compra Segura y Directa
+                </h4>
+                <p class="text-xs text-stoneMuted mt-1.5 leading-relaxed">
+                  Sin pasarelas impersonales: cotizas, reservas y coordinas entrega o visita directamente con nuestro equipo.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonios Simulados en Honduras -->
+          <div class="lg:col-span-6 bg-obsidian text-ivory rounded-3xl p-7 sm:p-10 shadow-luxury relative overflow-hidden">
+            <div class="absolute -right-10 -top-10 w-40 h-40 rounded-full bg-champagne/10 blur-2xl"></div>
+            <span class="text-xs font-semibold uppercase tracking-[0.25em] text-champagne">Experiencias Reales</span>
+            <h3 class="font-editorial text-2xl sm:text-3xl font-bold mt-1 mb-6">Lo que dicen nuestros clientes en Honduras</h3>
+
+            <div class="space-y-5">
+              <!-- Testimonio 1 -->
+              <div class="p-5 rounded-2xl bg-white/5 border border-white/10">
+                <div class="flex items-center justify-between mb-2">
+                  <div class="flex text-champagne gap-0.5">
+                    <i data-lucide="star" class="w-4 h-4 fill-champagne"></i>
+                    <i data-lucide="star" class="w-4 h-4 fill-champagne"></i>
+                    <i data-lucide="star" class="w-4 h-4 fill-champagne"></i>
+                    <i data-lucide="star" class="w-4 h-4 fill-champagne"></i>
+                    <i data-lucide="star" class="w-4 h-4 fill-champagne"></i>
+                  </div>
+                  <span class="text-[11px] text-ivory/60">Tegucigalpa, M.D.C.</span>
+                </div>
+                <p class="text-sm text-ivory/90 italic leading-relaxed">
+                  “Adquirí el Collar Diamante Gota de agua para un aniversario. La atención por WhatsApp fue impecable, me enviaron detalles antes de confirmar y la entrega fue súper segura.”
+                </p>
+                <p class="text-xs font-semibold text-champagneLight mt-3">— Valeria Mendoza</p>
+              </div>
+
+              <!-- Testimonio 2 -->
+              <div class="p-5 rounded-2xl bg-white/5 border border-white/10">
+                <div class="flex items-center justify-between mb-2">
+                  <div class="flex text-champagne gap-0.5">
+                    <i data-lucide="star" class="w-4 h-4 fill-champagne"></i>
+                    <i data-lucide="star" class="w-4 h-4 fill-champagne"></i>
+                    <i data-lucide="star" class="w-4 h-4 fill-champagne"></i>
+                    <i data-lucide="star" class="w-4 h-4 fill-champagne"></i>
+                    <i data-lucide="star" class="w-4 h-4 fill-champagne"></i>
+                  </div>
+                  <span class="text-[11px] text-ivory/60">San Pedro Sula, Cortés</span>
+                </div>
+                <p class="text-sm text-ivory/90 italic leading-relaxed">
+                  “Excelente presentación y seriedad. El Reloj para Caballero en Oro Italiano superó mis expectativas. Muy recomendados por su transparencia.”
+                </p>
+                <p class="text-xs font-semibold text-champagneLight mt-3">— Carlos Eduardo Pineda</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 3. CATÁLOGO / TIENDA ==================== -->
+    <section id="catalogo" class="py-16 sm:py-24 bg-ivory border-b border-champagne/15">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- Encabezado Catálogo -->
+        <div class="text-center max-w-2xl mx-auto mb-12">
+          <span class="text-xs font-semibold uppercase tracking-[0.25em] text-champagneDark">Vitrina Oficial</span>
+          <h2 class="font-editorial text-3xl sm:text-5xl font-bold text-obsidian mt-1">Catálogo Claribella Joyería</h2>
+          <p class="text-sm sm:text-base text-stoneMuted mt-3">
+            Filtra por categoría, marca o presupuesto en Lempiras (L). Haz clic en cualquier pieza para ampliar su vista y especificaciones.
+          </p>
+        </div>
+
+        <!-- Barra de Filtros y Búsqueda -->
+        <div class="bg-white p-5 sm:p-6 rounded-3xl shadow-luxury border border-champagne/20 mb-10 space-y-5">
+          <!-- Pestañas de Categoría -->
+          <div class="flex flex-wrap items-center gap-2" id="category-filters">
+            <button onclick="setCategoryFilter('Todos')" data-cat="Todos" class="cat-btn active px-4 py-2 rounded-full text-xs sm:text-sm font-semibold transition-all bg-obsidian text-ivory">
+              Todos
+            </button>
+            <button onclick="setCategoryFilter('Aritos')" data-cat="Aritos" class="cat-btn px-4 py-2 rounded-full text-xs sm:text-sm font-semibold transition-all bg-cream text-obsidian hover:bg-champagne/20">
+              Aritos
+            </button>
+            <button onclick="setCategoryFilter('Cadenas')" data-cat="Cadenas" class="cat-btn px-4 py-2 rounded-full text-xs sm:text-sm font-semibold transition-all bg-cream text-obsidian hover:bg-champagne/20">
+              Cadenas
+            </button>
+            <button onclick="setCategoryFilter('Relojes')" data-cat="Relojes" class="cat-btn px-4 py-2 rounded-full text-xs sm:text-sm font-semibold transition-all bg-cream text-obsidian hover:bg-champagne/20">
+              Relojes
+            </button>
+            <button onclick="setCategoryFilter('Anillos')" data-cat="Anillos" class="cat-btn px-4 py-2 rounded-full text-xs sm:text-sm font-semibold transition-all bg-cream text-obsidian hover:bg-champagne/20">
+              Anillos
+            </button>
+            <button onclick="setCategoryFilter('Pulseras')" data-cat="Pulseras" class="cat-btn px-4 py-2 rounded-full text-xs sm:text-sm font-semibold transition-all bg-cream text-obsidian hover:bg-champagne/20">
+              Pulseras
+            </button>
+          </div>
+
+          <!-- Controles Inferiores: Buscador, Marca y Rango de Precio -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 pt-3 border-t border-cream">
+            <!-- Buscador -->
+            <div class="lg:col-span-2 relative">
+              <i data-lucide="search" class="w-4 h-4 text-stoneMuted absolute left-4 top-1/2 -translate-y-1/2"></i>
+              <input
+                type="text"
+                id="search-input"
+                oninput="applyFilters()"
+                placeholder="Buscar por nombre, modelo o material (ej. Oro, Zafiro, Juvenil)..."
+                class="w-full pl-11 pr-4 py-2.5 rounded-xl bg-ivory border border-champagne/25 text-sm text-obsidian placeholder:text-stoneMuted focus:outline-none focus:border-champagne"
+              />
+            </div>
+
+            <!-- Filtro Marca -->
+            <div>
+              <select
+                id="brand-filter"
+                onchange="applyFilters()"
+                aria-label="Filtrar por marca"
+                class="w-full px-4 py-2.5 rounded-xl bg-ivory border border-champagne/25 text-sm text-obsidian focus:outline-none focus:border-champagne"
+              >
+                <option value="Todos">Marca: Todas (Claribella)</option>
+                <option value="Claribella">Claribella</option>
+              </select>
+            </div>
+
+            <!-- Filtro Rango de Precio -->
+            <div>
+              <select
+                id="price-filter"
+                onchange="applyFilters()"
+                aria-label="Filtrar por rango de precio"
+                class="w-full px-4 py-2.5 rounded-xl bg-ivory border border-champagne/25 text-sm text-obsidian focus:outline-none focus:border-champagne"
+              >
+                <option value="all">Precio: Todos los rangos</option>
+                <option value="0-5000">Hasta L 5,000</option>
+                <option value="5001-15000">L 5,001 – L 15,000</option>
+                <option value="15001-999999">Más de L 15,000</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contador de resultados -->
+        <div class="flex items-center justify-between mb-6 text-xs sm:text-sm text-stoneMuted">
+          <p id="results-count">Mostrando 5 artículos disponibles</p>
+          <button onclick="resetFilters()" id="reset-filters-btn" class="hidden text-champagneDark font-semibold hover:underline">
+            Limpiar filtros
+          </button>
+        </div>
+
+        <!-- Grid de Productos -->
+        <div id="catalog-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-7">
+          <!-- Renderizado dinámico JS -->
+        </div>
+
+        <!-- Mensaje Estado Vacío (ej. Pulseras o búsqueda sin coincidencias) -->
+        <div id="empty-catalog-state" class="hidden bg-white rounded-3xl p-10 sm:p-14 text-center border border-champagne/25 shadow-luxury max-w-2xl mx-auto">
+          <div class="w-16 h-16 rounded-full bg-cream text-champagneDark flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="gem" class="w-7 h-7"></i>
+          </div>
+          <h3 id="empty-state-title" class="font-editorial text-2xl sm:text-3xl font-bold text-obsidian mb-2">
+            Actualmente no hay piezas registradas en esta categoría
+          </h3>
+          <p id="empty-state-desc" class="text-sm text-stoneMuted max-w-md mx-auto mb-6 leading-relaxed">
+            Nuestro inventario se actualiza periódicamente con nuevas piezas curadas en oro y plata. Puedes explorar el resto de nuestro catálogo o consultarnos directamente por WhatsApp.
+          </p>
+          <div class="flex flex-wrap justify-center gap-3">
+            <button onclick="resetFilters()" class="px-6 py-3 rounded-full bg-obsidian text-ivory text-sm font-semibold hover:bg-charcoal transition-colors">
+              Ver todo el catálogo
+            </button>
+            <a
+              href="https://wa.me/50496005320?text=Hola%20%F0%9F%98%8A%20Me%20gustar%C3%ADa%20consultar%20disponibilidad%20de%20nuevas%20piezas%20en%20Claribella%20Joyer%C3%ADa."
+              target="_blank"
+              rel="noopener noreferrer"
+              class="px-6 py-3 rounded-full bg-emerald-600 text-white text-sm font-semibold hover:bg-emerald-700 transition-colors inline-flex items-center gap-2"
+            >
+              <i data-lucide="message-circle" class="w-4 h-4"></i>
+              <span>Consultar por WhatsApp</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 4. CONTÁCTANOS ==================== -->
+    <section id="contacto" class="py-16 sm:py-24 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+          <!-- Información de Contacto -->
+          <div class="lg:col-span-5 space-y-6">
+            <span class="text-xs font-semibold uppercase tracking-[0.25em] text-champagneDark">Atención Exclusiva</span>
+            <h2 class="font-editorial text-3xl sm:text-4xl font-bold text-obsidian">
+              Conversemos sobre tu próxima joya
+            </h2>
+            <p class="text-sm sm:text-base text-stoneMuted leading-relaxed">
+              ¿Deseas confirmar disponibilidad, solicitar videos detallados de una pieza o coordinar una entrega en Honduras? Nuestro equipo de asesores está listo para atenderte.
+            </p>
+
+            <div class="space-y-4 pt-2">
+              <div class="flex items-start gap-4 p-4 rounded-2xl bg-ivory border border-champagne/20">
+                <div class="w-10 h-10 rounded-xl bg-obsidian text-champagne flex items-center justify-center shrink-0">
+                  <i data-lucide="phone" class="w-5 h-5"></i>
+                </div>
+                <div>
+                  <h4 class="text-sm font-bold text-obsidian">WhatsApp Business Oficial</h4>
+                  <p class="text-sm text-stoneMuted mt-0.5">+504 9600-5320</p>
+                  <a
+                    href="https://wa.me/50496005320?text=Hola%20%F0%9F%98%8A%20Me%20interesa%20cotizar%20y%20conocer%20disponibilidad%20de%20los%20art%C3%ADculos%20de%20joyer%C3%ADa%20que%20vi%20en%20su%20web."
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="inline-flex items-center gap-1.5 text-xs font-semibold text-emerald-700 hover:text-emerald-800 mt-1.5"
+                  >
+                    <span>Iniciar chat directo</span>
+                    <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+                  </a>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-4 p-4 rounded-2xl bg-ivory border border-champagne/20">
+                <div class="w-10 h-10 rounded-xl bg-obsidian text-champagne flex items-center justify-center shrink-0">
+                  <i data-lucide="clock" class="w-5 h-5"></i>
+                </div>
+                <div>
+                  <h4 class="text-sm font-bold text-obsidian">Horarios de Atención</h4>
+                  <p class="text-sm text-stoneMuted mt-0.5">Lunes a Sábado: 9:00 AM – 6:30 PM</p>
+                  <p class="text-xs text-stoneMuted">Domingos: Atención previa cita vía WhatsApp</p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-4 p-4 rounded-2xl bg-ivory border border-champagne/20">
+                <div class="w-10 h-10 rounded-xl bg-obsidian text-champagne flex items-center justify-center shrink-0">
+                  <i data-lucide="map-pin" class="w-5 h-5"></i>
+                </div>
+                <div>
+                  <h4 class="text-sm font-bold text-obsidian">Cobertura en Honduras</h4>
+                  <p class="text-sm text-stoneMuted mt-0.5">Tegucigalpa, San Pedro Sula y envíos asegurados a nivel nacional.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Formulario Interactivo -->
+          <div class="lg:col-span-7">
+            <div class="bg-ivory p-7 sm:p-10 rounded-3xl border border-champagne/25 shadow-luxury">
+              <h3 class="font-editorial text-2xl sm:text-3xl font-bold text-obsidian mb-2">Envíanos un mensaje</h3>
+              <p class="text-xs sm:text-sm text-stoneMuted mb-6">Completa tus datos y te responderemos a la brevedad o te conectaremos por WhatsApp.</p>
+
+              <form id="contact-form" onsubmit="handleContactSubmit(event)" class="space-y-4">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div>
+                    <label for="contact-name" class="block text-xs font-semibold uppercase tracking-wider text-obsidian mb-1.5">Nombre completo *</label>
+                    <input
+                      type="text"
+                      id="contact-name"
+                      required
+                      placeholder="Ej. María Fernanda López"
+                      class="w-full px-4 py-3 rounded-xl bg-white border border-champagne/30 text-sm focus:outline-none focus:border-champagne"
+                    />
+                  </div>
+                  <div>
+                    <label for="contact-phone" class="block text-xs font-semibold uppercase tracking-wider text-obsidian mb-1.5">Teléfono / WhatsApp *</label>
+                    <input
+                      type="tel"
+                      id="contact-phone"
+                      required
+                      placeholder="Ej. +504 9999-9999"
+                      class="w-full px-4 py-3 rounded-xl bg-white border border-champagne/30 text-sm focus:outline-none focus:border-champagne"
+                    />
+                  </div>
+                </div>
+
+                <div>
+                  <label for="contact-interest" class="block text-xs font-semibold uppercase tracking-wider text-obsidian mb-1.5">Pieza o Categoría de Interés</label>
+                  <select
+                    id="contact-interest"
+                    class="w-full px-4 py-3 rounded-xl bg-white border border-champagne/30 text-sm focus:outline-none focus:border-champagne"
+                  >
+                    <option value="Consulta General">Consulta General del Catálogo</option>
+                    <option value="Anillos - Juvenil (L 550)">Anillos — Modelo Juvenil (L 550)</option>
+                    <option value="Collar Diamante - Diamante Gota de agua (L 12,000)">Collar Diamante — Diamante Gota de agua (L 12,000)</option>
+                    <option value="Juego de cadenas - Clasicas (L 7,000 / L 32,000)">Juego de cadenas — Modelo Clásicas (L 7,000 / L 32,000)</option>
+                    <option value="Reloj para Caballero - Clasico (L 25,000)">Reloj para Caballero — Modelo Clásico (L 25,000)</option>
+                    <option value="Aritos Zafiro Azul amor - Azul amor (L 8,000)">Aritos Zafiro Azul amor — Modelo Azul amor (L 8,000)</option>
+                  </select>
+                </div>
+
+                <div>
+                  <label for="contact-message" class="block text-xs font-semibold uppercase tracking-wider text-obsidian mb-1.5">Mensaje *</label>
+                  <textarea
+                    id="contact-message"
+                    rows="4"
+                    required
+                    placeholder="Cuéntanos cómo podemos ayudarte (disponibilidad, entrega en tu ciudad, cita de visualización)..."
+                    class="w-full px-4 py-3 rounded-xl bg-white border border-champagne/30 text-sm focus:outline-none focus:border-champagne"
+                  ></textarea>
+                </div>
+
+                <div class="flex flex-wrap items-center gap-3 pt-2">
+                  <button
+                    type="submit"
+                    class="flex-1 sm:flex-none inline-flex items-center justify-center gap-2 bg-obsidian hover:bg-charcoal text-ivory px-7 py-3.5 rounded-full text-sm font-semibold transition-all shadow-md"
+                  >
+                    <i data-lucide="send" class="w-4 h-4 text-champagne"></i>
+                    <span>Enviar consulta</span>
+                  </button>
+
+                  <a
+                    href="https://wa.me/50496005320?text=Hola%20%F0%9F%98%8A%20Me%20interesa%20cotizar%20y%20conocer%20disponibilidad%20de%20los%20art%C3%ADculos%20de%20joyer%C3%ADa%20que%20vi%20en%20su%20web."
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="flex-1 sm:flex-none inline-flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white px-6 py-3.5 rounded-full text-sm font-semibold transition-all"
+                  >
+                    <i data-lucide="message-circle" class="w-4 h-4"></i>
+                    <span>Escribir por WhatsApp</span>
+                  </a>
+                </div>
+
+                <!-- Feedback Envío Formulario -->
+                <div id="contact-feedback" class="hidden p-4 rounded-2xl bg-emerald-50 border border-emerald-200 text-emerald-900 text-sm"></div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="bg-obsidian text-ivory border-t border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 pb-8 border-b border-white/10">
+        <div>
+          <div class="flex items-center gap-3 mb-3">
+            <div class="w-9 h-9 rounded-full border border-champagne flex items-center justify-center text-champagne">
+              <i data-lucide="gem" class="w-4 h-4"></i>
+            </div>
+            <span class="font-editorial text-2xl font-bold tracking-wide">CLARIBELLA</span>
+          </div>
+          <p class="text-xs text-ivory/70 leading-relaxed max-w-sm">
+            Alta joyería en Oro y Plata para Honduras. Piezas curadas con transparencia en materiales, precios en Lempiras y atención personalizada.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="text-xs font-bold uppercase tracking-widest text-champagne mb-3">Navegación</h4>
+          <ul class="space-y-2 text-xs text-ivory/80">
+            <li><a href="#inicio" class="hover:text-champagne transition-colors">Inicio</a></li>
+            <li><a href="#destacados" class="hover:text-champagne transition-colors">Piezas Destacadas</a></li>
+            <li><a href="#quienes-somos" class="hover:text-champagne transition-colors">Quiénes Somos</a></li>
+            <li><a href="#catalogo" class="hover:text-champagne transition-colors">Catálogo de Joyería</a></li>
+            <li><a href="#contacto" class="hover:text-champagne transition-colors">Contáctanos</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-xs font-bold uppercase tracking-widest text-champagne mb-3">Atención Directa</h4>
+          <p class="text-xs text-ivory/80 mb-3">WhatsApp Business: <strong class="text-white">+504 9600-5320</strong></p>
+          <button onclick="toggleCart(true)" class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-champagne text-obsidian text-xs font-bold hover:bg-champagneLight transition-colors">
+            <i data-lucide="shopping-bag" class="w-3.5 h-3.5"></i>
+            <span>Revisar mi Carrito</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="pt-6 flex flex-col sm:flex-row items-center justify-between text-xs text-ivory/50 gap-2">
+        <p>© 2026 Claribella Joyería Honduras. Todos los derechos reservados.</p>
+        <p>Precios referenciales expresados en Lempiras Hondureños (L).</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== VENTANA MODAL PREMIUM DE PRODUCTO ==================== -->
+  <div
+    id="product-modal"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="modal-title"
+    class="fixed inset-0 z-50 hidden items-center justify-center p-4 sm:p-6 bg-obsidian/75 backdrop-blur-sm transition-opacity"
+    onclick="if(event.target === this) closeProductModal()"
+  >
+    <div class="bg-white w-full max-w-4xl rounded-3xl shadow-2xl border border-champagne/30 overflow-hidden animate-fade-up max-h-[92vh] flex flex-col">
+      <!-- Barra superior modal -->
+      <div class="flex items-center justify-between px-6 py-4 bg-ivory border-b border-champagne/20">
+        <div class="flex items-center gap-2">
+          <span id="modal-category-badge" class="px-3 py-1 rounded-full text-[11px] font-bold uppercase tracking-wider bg-obsidian text-champagne">
+            Categoría
+          </span>
+          <span class="px-2.5 py-1 rounded-full text-[11px] font-semibold bg-emerald-100 text-emerald-800">
+            Disponible
+          </span>
+        </div>
+        <button
+          onclick="closeProductModal()"
+          aria-label="Cerrar detalle de producto"
+          class="w-9 h-9 rounded-full bg-white border border-champagne/30 flex items-center justify-center text-obsidian hover:bg-obsidian hover:text-white transition-colors"
+        >
+          <i data-lucide="x" class="w-4 h-4"></i>
+        </button>
+      </div>
+
+      <!-- Contenido Modal -->
+      <div class="overflow-y-auto p-6 sm:p-8 grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+        <!-- Imagen ampliada -->
+        <div class="md:col-span-6">
+          <div class="zoom-container aspect-square rounded-2xl bg-cream border border-champagne/20 relative">
+            <img
+              id="modal-img"
+              src=""
+              alt=""
+              class="w-full h-full object-cover object-center"
+            />
+            <span class="absolute bottom-3 right-3 px-2.5 py-1 rounded-lg bg-obsidian/75 text-ivory text-[10px] backdrop-blur-sm flex items-center gap-1">
+              <i data-lucide="zoom-in" class="w-3 h-3 text-champagne"></i>
+              Pasa el cursor para ampliar
+            </span>
+          </div>
+        </div>
+
+        <!-- Ficha Técnica -->
+        <div class="md:col-span-6 space-y-5">
+          <div>
+            <p id="modal-brand" class="text-xs font-bold uppercase tracking-[0.2em] text-champagneDark">Marca: Claribella</p>
+            <h3 id="modal-title" class="font-editorial text-3xl sm:text-4xl font-bold text-obsidian mt-1">Nombre del Producto</h3>
+          </div>
+
+          <div id="modal-price-box" class="py-3 px-4 rounded-2xl bg-ivory border border-champagne/25 flex items-baseline justify-between">
+            <span class="text-xs uppercase tracking-wider text-stoneMuted font-semibold">Precio</span>
+            <span id="modal-price" class="font-editorial text-3xl font-bold text-obsidian">L 0</span>
+          </div>
+
+          <!-- Selector de Presentación (Visible solo si el producto tiene variantes como Juego de cadenas) -->
+          <div id="modal-variant-wrapper" class="hidden space-y-2">
+            <label class="block text-xs font-bold uppercase tracking-wider text-obsidian">Selecciona presentación:</label>
+            <div id="modal-variant-options" class="grid grid-cols-2 gap-2.5">
+              <!-- Botones generados dinámicamente -->
+            </div>
+          </div>
+
+          <!-- Especificaciones exactas del catálogo -->
+          <div class="space-y-2 text-sm border-y border-cream py-4">
+            <div class="flex justify-between">
+              <span class="text-stoneMuted">Modelo:</span>
+              <span id="modal-model" class="font-semibold text-obsidian">—</span>
+            </div>
+            <div class="flex justify-between">
+              <span class="text-stoneMuted">Material:</span>
+              <span id="modal-material" class="font-semibold text-obsidian">—</span>
+            </div>
+            <div class="flex justify-between">
+              <span class="text-stoneMuted">Marca:</span>
+              <span id="modal-brand-val" class="font-semibold text-obsidian">—</span>
+            </div>
+            <div class="flex justify-between">
+              <span class="text-stoneMuted">Código / ID:</span>
+              <span id="modal-id" class="font-mono text-xs px-2 py-0.5 rounded bg-cream text-obsidian">N/D</span>
+            </div>
+          </div>
+
+          <p id="modal-description" class="text-sm text-stoneMuted leading-relaxed">
+            Descripción de la pieza.
+          </p>
+
+          <!-- Botones de Acción -->
+          <div class="space-y-2.5 pt-1">
+            <button
+              id="modal-add-btn"
+              onclick="addFromModal()"
+              class="w-full py-3.5 px-6 rounded-full bg-obsidian hover:bg-charcoal text-ivory text-sm font-semibold flex items-center justify-center gap-2 transition-all shadow-md active:scale-[0.99]"
+            >
+              <i data-lucide="shopping-bag" class="w-4 h-4 text-champagne"></i>
+              <span>Agregar al carrito</span>
+            </button>
+
+            <a
+              id="modal-wa-btn"
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="w-full py-3 px-6 rounded-full bg-emerald-600 hover:bg-emerald-700 text-white text-sm font-semibold flex items-center justify-center gap-2 transition-all"
+            >
+              <i data-lucide="message-circle" class="w-4 h-4"></i>
+              <span>Consultar esta pieza por WhatsApp</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== DRAWER CARRITO DE COMPRAS ==================== -->
+  <div
+    id="cart-overlay"
+    class="fixed inset-0 z-50 hidden bg-obsidian/65 backdrop-blur-xs transition-opacity"
+    onclick="if(event.target === this) toggleCart(false)"
+  >
+    <aside
+      id="cart-drawer"
+      aria-label="Carrito de compras"
+      class="fixed top-0 right-0 h-full w-full max-w-md bg-white shadow-2xl border-l border-champagne/25 flex flex-col transform transition-transform duration-300 translate-x-full"
+    >
+      <!-- Header Carrito -->
+      <div class="px-6 py-5 bg-obsidian text-ivory flex items-center justify-between">
+        <div class="flex items-center gap-2.5">
+          <i data-lucide="shopping-bag" class="w-5 h-5 text-champagne"></i>
+          <div>
+            <h3 class="font-editorial text-2xl font-bold leading-none">Tu Selección</h3>
+            <p class="text-[11px] text-ivory/70 mt-1">Cotización y Reserva vía WhatsApp</p>
+          </div>
+        </div>
+        <button
+          onclick="toggleCart(false)"
+          aria-label="Cerrar carrito"
+          class="w-9 h-9 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center text-ivory transition-colors"
+        >
+          <i data-lucide="x" class="w-4 h-4"></i>
+        </button>
+      </div>
+
+      <!-- Lista de Items -->
+      <div id="cart-items-container" class="flex-1 overflow-y-auto p-6 space-y-4 bg-ivory/60">
+        <!-- Renderizado dinámico JS -->
+      </div>
+
+      <!-- Footer Checkout WhatsApp -->
+      <div id="cart-footer" class="p-6 bg-white border-t border-champagne/25 space-y-4">
+        <div class="space-y-1.5 text-sm">
+          <div class="flex justify-between text-stoneMuted">
+            <span>Subtotal referencial:</span>
+            <span id="cart-subtotal" class="font-medium text-obsidian">L 0</span>
+          </div>
+          <div class="flex justify-between text-base font-bold text-obsidian pt-2 border-t border-cream">
+            <span>Total referencial:</span>
+            <span id="cart-total" class="font-editorial text-2xl text-champagneDark">L 0</span>
+          </div>
+        </div>
+
+        <button
+          id="checkout-wa-btn"
+          onclick="finalizeOrderWhatsApp()"
+          class="w-full py-4 px-6 rounded-full bg-emerald-600 hover:bg-emerald-700 disabled:opacity-40 disabled:cursor-not-allowed text-white text-sm font-bold flex items-center justify-center gap-2.5 shadow-lg transition-all active:scale-[0.99]"
+        >
+          <i data-lucide="message-circle" class="w-5 h-5"></i>
+          <span>Finalizar pedido por WhatsApp</span>
+        </button>
+
+        <p class="text-[11px] text-center text-stoneMuted leading-snug">
+          Se abrirá WhatsApp Business (+504 9600-5320) con el detalle completo de tus joyas para confirmar disponibilidad y entrega.
+        </p>
+      </div>
+    </aside>
+  </div>
+
+  <!-- ==================== NOTIFICACIÓN TOAST ==================== -->
+  <div
+    id="toast-notification"
+    class="fixed bottom-24 left-1/2 -translate-x-1/2 z-50 hidden items-center gap-2.5 bg-obsidian text-ivory px-5 py-3 rounded-full shadow-xl border border-champagne/40 text-xs sm:text-sm font-medium"
+  >
+    <i data-lucide="check-circle-2" class="w-4 h-4 text-champagne"></i>
+    <span id="toast-message">Pieza agregada al carrito</span>
+  </div>
+
+  <!-- ==================== CHATBOT FLOTANTE MODERNO (ASISTENTE VIRTUAL IA) ==================== -->
+  <div class="fixed bottom-5 right-5 z-40">
+    <!-- Ventana de Chat -->
+    <div
+      id="chatbot-window"
+      class="hidden mb-4 w-[calc(100vw-2.5rem)] sm:w-[380px] bg-white rounded-3xl shadow-2xl border border-champagne/30 overflow-hidden flex-col animate-fade-up"
+      style="max-height: 78vh;"
+    >
+      <!-- Header Chatbot SaaS -->
+      <div class="bg-obsidian text-ivory px-5 py-4 flex items-center justify-between border-b border-champagne/25">
+        <div class="flex items-center gap-3">
+          <div class="relative">
+            <div class="w-10 h-10 rounded-full bg-gradient-to-br from-champagne to-champagneDark text-obsidian flex items-center justify-center font-bold shadow-inner">
+              <i data-lucide="sparkles" class="w-5 h-5"></i>
+            </div>
+            <span class="absolute bottom-0 right-0 w-3 h-3 rounded-full bg-emerald-400 border-2 border-obsidian"></span>
+          </div>
+          <div>
+            <h4 class="font-semibold text-sm text-white flex items-center gap-1.5">
+              <span>Clara • Asistente IA</span>
+              <span class="text-[10px] px-1.5 py-0.5 rounded bg-champagne/20 text-champagneLight font-medium">En línea</span>
+            </h4>
+            <p class="text-[11px] text-ivory/70">Concierge Digital Claribella Joyería</p>
+          </div>
+        </div>
+        <button
+          onclick="toggleChatbot()"
+          aria-label="Cerrar asistente virtual"
+          class="w-8 h-8 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center text-ivory transition-colors"
+        >
+          <i data-lucide="minus" class="w-4 h-4"></i>
+        </button>
+      </div>
+
+      <!-- Mensajes -->
+      <div id="chat-messages" class="flex-1 overflow-y-auto p-4 space-y-3 bg-ivory/80 min-h-[270px] max-h-[340px]">
+        <!-- Mensaje inicial de bienvenida -->
+        <div class="flex items-start gap-2.5">
+          <div class="w-7 h-7 rounded-full bg-obsidian text-champagne flex items-center justify-center shrink-0 mt-0.5">
+            <i data-lucide="gem" class="w-3.5 h-3.5"></i>
+          </div>
+          <div class="bg-white border border-champagne/20 rounded-2xl rounded-tl-none px-4 py-3 text-xs sm:text-sm text-obsidian shadow-xs leading-relaxed">
+            ¡Hola! ✨ Soy <strong>Clara</strong>, tu asesora virtual de <strong>Claribella Joyería</strong> en Honduras. ¿En qué puedo ayudarte hoy? Puedes elegir un tema rápido o escribir tu consulta.
+          </div>
+        </div>
+      </div>
+
+      <!-- Chips de Preguntas Frecuentes -->
+      <div class="px-4 py-2.5 bg-white border-t border-cream flex gap-1.5 overflow-x-auto">
+        <button onclick="sendQuickQuestion('Productos')" class="shrink-0 px-3 py-1 rounded-full bg-ivory hover:bg-champagne/20 border border-champagne/30 text-[11px] font-medium text-obsidian transition-colors">
+          💎 Productos
+        </button>
+        <button onclick="sendQuickQuestion('Horarios')" class="shrink-0 px-3 py-1 rounded-full bg-ivory hover:bg-champagne/20 border border-champagne/30 text-[11px] font-medium text-obsidian transition-colors">
+          🕒 Horarios
+        </button>
+        <button onclick="sendQuickQuestion('Entregas')" class="shrink-0 px-3 py-1 rounded-full bg-ivory hover:bg-champagne/20 border border-champagne/30 text-[11px] font-medium text-obsidian transition-colors">
+          🚚 Entregas
+        </button>
+        <button onclick="sendQuickQuestion('Disponibilidad')" class="shrink-0 px-3 py-1 rounded-full bg-ivory hover:bg-champagne/20 border border-champagne/30 text-[11px] font-medium text-obsidian transition-colors">
+          ✅ Disponibilidad
+        </button>
+        <button onclick="sendQuickQuestion('Promociones')" class="shrink-0 px-3 py-1 rounded-full bg-ivory hover:bg-champagne/20 border border-champagne/30 text-[11px] font-medium text-obsidian transition-colors">
+          🎁 Promociones
+        </button>
+        <button onclick="sendQuickQuestion('Seguimiento de pedidos')" class="shrink-0 px-3 py-1 rounded-full bg-ivory hover:bg-champagne/20 border border-champagne/30 text-[11px] font-medium text-obsidian transition-colors">
+          📦 Seguimiento
+        </button>
+        <button onclick="sendQuickQuestion('Soporte técnico')" class="shrink-0 px-3 py-1 rounded-full bg-ivory hover:bg-champagne/20 border border-champagne/30 text-[11px] font-medium text-obsidian transition-colors">
+          🛡️ Garantía
+        </button>
+        <button onclick="sendQuickQuestion('Contacto')" class="shrink-0 px-3 py-1 rounded-full bg-ivory hover:bg-champagne/20 border border-champagne/30 text-[11px] font-medium text-obsidian transition-colors">
+          📞 Contacto
+        </button>
+      </div>
+
+      <!-- Input Chat -->
+      <form onsubmit="handleChatSubmit(event)" class="p-3 bg-white border-t border-champagne/20 flex items-center gap-2">
+        <input
+          type="text"
+          id="chat-input"
+          placeholder="Escribe tu pregunta aquí..."
+          autocomplete="off"
+          class="flex-1 px-3.5 py-2.5 rounded-full bg-ivory border border-champagne/25 text-xs sm:text-sm text-obsidian focus:outline-none focus:border-champagne"
+        />
+        <button
+          type="submit"
+          aria-label="Enviar mensaje"
+          class="w-10 h-10 rounded-full bg-obsidian hover:bg-charcoal text-champagne flex items-center justify-center shrink-0 transition-transform active:scale-95"
+        >
+          <i data-lucide="send" class="w-4 h-4"></i>
+        </button>
+      </form>
+    </div>
+
+    <!-- Botón Flotante Disparador -->
+    <div class="flex justify-end">
+      <button
+        id="chatbot-trigger"
+        onclick="toggleChatbot()"
+        aria-label="Abrir asistente virtual Claribella"
+        class="pulse-gold group inline-flex items-center gap-3 bg-obsidian hover:bg-charcoal text-ivory pl-4 pr-5 py-3.5 rounded-full shadow-2xl border border-champagne/50 transition-all duration-300 hover:-translate-y-0.5"
+      >
+        <div class="relative w-8 h-8 rounded-full bg-champagne text-obsidian flex items-center justify-center">
+          <i data-lucide="sparkles" class="w-4 h-4"></i>
+          <span class="absolute -top-0.5 -right-0.5 w-2.5 h-2.5 rounded-full bg-emerald-400 border-2 border-obsidian"></span>
+        </div>
+        <div class="text-left">
+          <span class="block text-xs font-bold text-white leading-none">Asistente Claribella</span>
+          <span class="block text-[10px] text-champagneLight mt-0.5">¿Dudas? Chatea ahora</span>
+        </div>
+      </button>
+    </div>
+  </div>
+
+  <!-- ==================== LÓGICA JAVASCRIPT ==================== -->
+  <script>
+    /**
+     * 1. DATASET INICIAL DEL CATÁLOGO (ESTRICTO SEGÚN DOCUMENTO PROPORCIONADO)
+     * Sin inventar modelos, nombres ni precios fuera de la fuente.
+     * Campos faltantes de ID/código establecidos explícitamente como "N/D".
+     */
+    const CATALOG_DATA = [
+      {
+        uid: 0,
+        id: "N/D",
+        categoria: "Anillos",
+        nombre: "Anillos",
+        foto: "https://lh3.googleusercontent.com/d/1QCb-ZytSyM4apNd833OGhg4HCqJBxpER",
+        marca: "Claribella",
+        material: "Oro y Plata",
+        modelo: "Juvenil",
+        precio: 550,
+        opcionesPrecio: null,
+        descripcion: "Anillos modelo Juvenil de la marca Claribella elaborados en Oro y Plata. Pieza versátil, delicada y disponible para entrega inmediata o reserva."
+      },
+      {
+        uid: 1,
+        id: "N/D",
+        categoria: "Cadenas",
+        nombre: "Collar Diamante",
+        foto: "https://lh3.googleusercontent.com/d/1NuF7vV2O6iKAffTOmAnIH92OtaYb_NMh",
+        marca: "Claribella",
+        material: "Oro Rosa, con Diamante",
+        modelo: "Diamante Gota de agua",
+        precio: 12000,
+        opcionesPrecio: null,
+        descripcion: "Collar Diamante modelo Diamante Gota de agua de Claribella, confeccionado en Oro Rosa con Diamante. Diseño distinguido ideal para ocasiones inolvidables."
+      },
+      {
+        uid: 2,
+        id: "N/D",
+        categoria: "Cadenas",
+        nombre: "Juego de cadenas",
+        foto: "https://lh3.googleusercontent.com/d/19i5ZKC3aMfOqDrqgdmyfvusj9pxRDPgf",
+        marca: "Claribella",
+        material: "Oro",
+        modelo: "Clasicas",
+        precio: 7000, // Precio Unitario base
+        opcionesPrecio: [
+          { etiqueta: "Precio Unitario", precio: 7000 },
+          { etiqueta: "Precio Conjunto", precio: 32000 }
+        ],
+        descripcion: "Juego de cadenas modelo Clasicas de Claribella en material Oro. Disponible en presentación Unitario (L 7,000) o Conjunto completo (L 32,000)."
+      },
+      {
+        uid: 3,
+        id: "N/D",
+        categoria: "Relojes",
+        nombre: "Reloj para Caballero",
+        foto: "https://lh3.googleusercontent.com/d/1xItt4r9hRSidcsvrYvV8r10NtVYXsN2m",
+        marca: "Claribella",
+        material: "Oro Italino",
+        modelo: "Clasico",
+        precio: 25000,
+        opcionesPrecio: null,
+        descripcion: "Reloj para Caballero modelo Clasico de Claribella elaborado en Oro Italino. Presencia sobria, elegante y atemporal para el hombre distinguido."
+      },
+      {
+        uid: 4,
+        id: "N/D",
+        categoria: "Aritos",
+        nombre: "Aritos Zafiro Azul amor",
+        foto: "https://lh3.googleusercontent.com/d/1LAeMgXso0S_Xc3Mrbfom7NvTxSJflPdL",
+        marca: "Claribella",
+        material: "Oro blanco Italino",
+        modelo: "Azul amor",
+        precio: 8000,
+        opcionesPrecio: null,
+        descripcion: "Aritos Zafiro Azul amor modelo Azul amor de Claribella, elaborados en Oro blanco Italino con acabado luminoso de alta joyería."
+      }
+    ];
+
+    const WHATSAPP_PHONE = "50496005320";
+    const STORAGE_KEY = "claribella_hn_cart_v1";
+
+    // Estado de la aplicación
+    let state = {
+      selectedCategory: "Todos",
+      searchQuery: "",
+      selectedBrand: "Todos",
+      priceRange: "all",
+      cart: [],
+      activeModalProduct: null,
+      activeModalVariantIndex: 0
+    };
+
+    /**
+     * Formateador numérico oficial en Lempiras Hondureños (ej. L 12,000)
+     */
+    function formatLempiras(amount) {
+      const numeric = Number(amount) || 0;
+      return "L " + numeric.toLocaleString("en-US", { maximumFractionDigits: 0 });
+    }
+
+    /**
+     * Fallback elegante si alguna imagen externa falla en cargar
+     */
+    function handleImgError(imgEl, label) {
+      imgEl.onerror = null;
+      const encoded = encodeURIComponent(label || "Claribella Joyería");
+      imgEl.src = `https://placehold.co/600x600/F3EFEA/121212?text=${encoded}`;
+    }
+
+    /**
+     * Inicialización al cargar DOM
+     */
+    document.addEventListener("DOMContentLoaded", () => {
+      loadCartFromStorage();
+      renderFeaturedSection();
+      applyFilters();
+      renderCart();
+      lucide.createIcons();
+
+      // Cerrar modal con tecla ESC
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") {
+          closeProductModal();
+          toggleCart(false);
+        }
+      });
+    });
+
+    /**
+     * Renderiza las 5 piezas reales en la sección Destacados del Home
+     */
+    function renderFeaturedSection() {
+      const container = document.getElementById("featured-grid");
+      if (!container) return;
+
+      container.innerHTML = CATALOG_DATA.map((item) => {
+        const priceDisplay = item.opcionesPrecio
+          ? `${formatLempiras(item.opcionesPrecio[0].precio)} – ${formatLempiras(item.opcionesPrecio[1].precio)}`
+          : formatLempiras(item.precio);
+
+        return `
+          <article class="group bg-white rounded-2xl border border-champagne/20 overflow-hidden shadow-xs hover:shadow-cardHover transition-all duration-300 flex flex-col">
+            <div class="relative aspect-square bg-cream overflow-hidden cursor-pointer" onclick="openProductModal(${item.uid})">
+              <img
+                src="${item.foto}"
+                alt="${item.categoria} - ${item.nombre}"
+                loading="lazy"
+                onerror="handleImgError(this, '${item.nombre}')"
+                class="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-105"
+              />
+              <span class="absolute top-3 left-3 px-2.5 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider bg-obsidian/85 text-champagne backdrop-blur-xs">
+                ${item.categoria}
+              </span>
+            </div>
+            <div class="p-4 flex-1 flex flex-col justify-between">
+              <div>
+                <p class="text-[11px] text-champagneDark font-semibold uppercase tracking-wider">${item.marca} • ${item.modelo}</p>
+                <h3 class="font-editorial text-xl font-bold text-obsidian mt-0.5 leading-snug group-hover:text-champagneDark transition-colors cursor-pointer" onclick="openProductModal(${item.uid})">
+                  ${item.nombre}
+                </h3>
+                <p class="text-xs text-stoneMuted mt-1">${item.material}</p>
+              </div>
+              <div class="mt-4 pt-3 border-t border-cream flex items-center justify-between gap-2">
+                <span class="font-bold text-sm text-obsidian">${priceDisplay}</span>
+                <button
+                  onclick="openProductModal(${item.uid})"
+                  class="text-xs font-semibold text-champagneDark hover:text-obsidian inline-flex items-center gap-1 transition-colors"
+                >
+                  <span>Detalle</span>
+                  <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
+                </button>
+              </div>
+            </div>
+          </article>
+        `;
+      }).join("");
+    }
+
+    /**
+     * Gestión de Filtros del Catálogo
+     */
+    function setCategoryFilter(category) {
+      state.selectedCategory = category;
+
+      // Actualizar estilos visuales de botones
+      document.querySelectorAll(".cat-btn").forEach((btn) => {
+        if (btn.dataset.cat === category) {
+          btn.classList.remove("bg-cream", "text-obsidian");
+          btn.classList.add("bg-obsidian", "text-ivory");
+        } else {
+          btn.classList.remove("bg-obsidian", "text-ivory");
+          btn.classList.add("bg-cream", "text-obsidian");
+        }
+      });
+
+      applyFilters();
+    }
+
+    function resetFilters() {
+      state.selectedCategory = "Todos";
+      state.searchQuery = "";
+      state.selectedBrand = "Todos";
+      state.priceRange = "all";
+
+      document.getElementById("search-input").value = "";
+      document.getElementById("brand-filter").value = "Todos";
+      document.getElementById("price-filter").value = "all";
+
+      setCategoryFilter("Todos");
+    }
+
+    function applyFilters() {
+      state.searchQuery = document.getElementById("search-input").value.trim().toLowerCase();
+      state.selectedBrand = document.getElementById("brand-filter").value;
+      state.priceRange = document.getElementById("price-filter").value;
+
+      const filtered = CATALOG_DATA.filter((item) => {
+        // Filtro Categoría
+        if (state.selectedCategory !== "Todos" && item.categoria !== state.selectedCategory) {
+          return false;
+        }
+
+        // Filtro Marca
+        if (state.selectedBrand !== "Todos" && item.marca !== state.selectedBrand) {
+          return false;
+        }
+
+        // Filtro Búsqueda por nombre, modelo, material o categoría
+        if (state.searchQuery) {
+          const haystack = `${item.nombre} ${item.modelo} ${item.material} ${item.categoria} ${item.marca}`.toLowerCase();
+          if (!haystack.includes(state.searchQuery)) return false;
+        }
+
+        // Filtro Rango de Precio
+        if (state.priceRange !== "all") {
+          const [min, max] = state.priceRange.split("-").map(Number);
+          const itemPrices = item.opcionesPrecio ? item.opcionesPrecio.map((o) => o.precio) : [item.precio];
+          const matchesRange = itemPrices.some((p) => p >= min && p <= max);
+          if (!matchesRange) return false;
+        }
+
+        return true;
+      });
+
+      renderCatalogGrid(filtered);
+    }
+
+    /**
+     * Renderiza las tarjetas del Catálogo / Tienda
+     */
+    function renderCatalogGrid(items) {
+      const grid = document.getElementById("catalog-grid");
+      const emptyState = document.getElementById("empty-catalog-state");
+      const countLabel = document.getElementById("results-count");
+      const resetBtn = document.getElementById("reset-filters-btn");
+
+      const hasActiveFilter =
+        state.selectedCategory !== "Todos" ||
+        state.searchQuery !== "" ||
+        state.selectedBrand !== "Todos" ||
+        state.priceRange !== "all";
+
+      resetBtn.classList.toggle("hidden", !hasActiveFilter);
+
+      if (items.length === 0) {
+        grid.classList.add("hidden");
+        emptyState.classList.remove("hidden");
+        countLabel.textContent = "0 artículos encontrados";
+
+        const emptyTitle = document.getElementById("empty-state-title");
+        if (state.selectedCategory === "Pulseras") {
+          emptyTitle.textContent = "Actualmente no hay piezas registradas en la categoría Pulseras";
+        } else {
+          emptyTitle.textContent = "No encontramos piezas con los filtros seleccionados";
+        }
+        lucide.createIcons();
+        return;
+      }
+
+      emptyState.classList.add("hidden");
+      grid.classList.remove("hidden");
+      countLabel.textContent = `Mostrando ${items.length} ${items.length === 1 ? "artículo disponible" : "artículos disponibles"}`;
+
+      grid.innerHTML = items.map((item) => {
+        const isMultiPrice = Array.isArray(item.opcionesPrecio);
+        const priceHtml = isMultiPrice
+          ? `<div class="space-y-0.5">
+               <p class="text-xs text-stoneMuted">Unitario: <strong class="text-obsidian text-base">${formatLempiras(item.opcionesPrecio[0].precio)}</strong></p>
+               <p class="text-xs text-stoneMuted">Conjunto: <strong class="text-champagneDark text-base">${formatLempiras(item.opcionesPrecio[1].precio)}</strong></p>
+             </div>`
+          : `<p class="font-editorial text-2xl sm:text-3xl font-bold text-obsidian">${formatLempiras(item.precio)}</p>`;
+
+        const directWaText = encodeURIComponent(
+          `Hola 😊 Me interesa consultar disponibilidad y detalles sobre: ${item.nombre} (Categoría: ${item.categoria}, Modelo: ${item.modelo}, Material: ${item.material}, Marca: ${item.marca}).`
+        );
+
+        return `
+          <article class="group bg-white rounded-3xl border border-champagne/20 overflow-hidden shadow-luxury hover:shadow-cardHover transition-all duration-300 flex flex-col">
+            <!-- Imagen real del producto con etiquetas claras -->
+            <div class="relative aspect-[4/3] bg-cream overflow-hidden cursor-pointer" onclick="openProductModal(${item.uid})">
+              <img
+                src="${item.foto}"
+                alt="${item.categoria}: ${item.nombre} - ${item.modelo}"
+                loading="lazy"
+                onerror="handleImgError(this, '${item.nombre}')"
+                class="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105"
+              />
+              <div class="absolute top-3.5 left-3.5 flex flex-wrap gap-1.5">
+                <span class="px-3 py-1 rounded-full text-[11px] font-bold uppercase tracking-wider bg-obsidian/90 text-champagne backdrop-blur-xs">
+                  ${item.categoria}
+                </span>
+                <span class="px-2.5 py-1 rounded-full text-[11px] font-semibold bg-emerald-500/95 text-white shadow-xs">
+                  Disponible
+                </span>
+              </div>
+              <button
+                onclick="event.stopPropagation(); openProductModal(${item.uid})"
+                aria-label="Ampliar ${item.nombre}"
+                class="absolute bottom-3 right-3 w-9 h-9 rounded-full bg-white/90 text-obsidian hover:bg-obsidian hover:text-champagne flex items-center justify-center shadow-md transition-colors"
+              >
+                <i data-lucide="maximize-2" class="w-4 h-4"></i>
+              </button>
+            </div>
+
+            <!-- Cuerpo de la Tarjeta -->
+            <div class="p-6 flex-1 flex flex-col justify-between">
+              <div>
+                <div class="flex items-center justify-between text-xs text-stoneMuted mb-1">
+                  <span class="font-bold uppercase tracking-widest text-champagneDark">${item.marca}</span>
+                  <span>ID: ${item.id}</span>
+                </div>
+
+                <h3 class="font-editorial text-2xl font-bold text-obsidian group-hover:text-champagneDark transition-colors cursor-pointer" onclick="openProductModal(${item.uid})">
+                  ${item.nombre}
+                </h3>
+
+                <div class="mt-2.5 space-y-1 text-xs text-stoneMuted">
+                  <p><strong class="text-obsidian">Modelo:</strong> ${item.modelo}</p>
+                  <p><strong class="text-obsidian">Material:</strong> ${item.material}</p>
+                </div>
+
+                <p class="text-xs text-stoneMuted mt-3 line-clamp-2 leading-relaxed">
+                  ${item.descripcion}
+                </p>
+              </div>
+
+              <!-- Precio y Acciones -->
+              <div class="mt-5 pt-4 border-t border-cream space-y-3">
+                <div class="flex items-center justify-between">
+                  ${priceHtml}
+                </div>
+
+                <div class="grid grid-cols-12 gap-2">
+                  <button
+                    onclick="openProductModal(${item.uid})"
+                    class="col-span-5 py-2.5 px-3 rounded-xl bg-ivory hover:bg-cream border border-champagne/35 text-obsidian text-xs font-semibold transition-colors"
+                  >
+                    Ver detalle
+                  </button>
+
+                  <button
+                    onclick="quickAddToCart(${item.uid})"
+                    class="col-span-5 py-2.5 px-3 rounded-xl bg-obsidian hover:bg-charcoal text-ivory text-xs font-semibold flex items-center justify-center gap-1.5 transition-all active:scale-95"
+                  >
+                    <i data-lucide="plus" class="w-3.5 h-3.5 text-champagne"></i>
+                    <span>Agregar</span>
+                  </button>
+
+                  <a
+                    href="https://wa.me/${WHATSAPP_PHONE}?text=${directWaText}"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    title="Consultar por WhatsApp"
+                    aria-label="Consultar ${item.nombre} por WhatsApp"
+                    class="col-span-2 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white flex items-center justify-center transition-colors"
+                  >
+                    <i data-lucide="message-circle" class="w-4 h-4"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+        `;
+      }).join("");
+
+      lucide.createIcons();
+    }
+
+    /**
+     * ==================== MODAL DE PRODUCTO ====================
+     */
+    function openProductModal(uid) {
+      const product = CATALOG_DATA.find((p) => p.uid === uid);
+      if (!product) return;
+
+      state.activeModalProduct = product;
+      state.activeModalVariantIndex = 0;
+
+      document.getElementById("modal-category-badge").textContent = product.categoria;
+      document.getElementById("modal-brand").textContent = `Marca: ${product.marca}`;
+      document.getElementById("modal-title").textContent = product.nombre;
+      document.getElementById("modal-model").textContent = product.modelo;
+      document.getElementById("modal-material").textContent = product.material;
+      document.getElementById("modal-brand-val").textContent = product.marca;
+      document.getElementById("modal-id").textContent = product.id;
+      document.getElementById("modal-description").textContent = product.descripcion;
+
+      const imgEl = document.getElementById("modal-img");
+      imgEl.src = product.foto;
+      imgEl.alt = `${product.categoria} - ${product.nombre}`;
+      imgEl.onerror = () => handleImgError(imgEl, product.nombre);
+
+      // Manejo de variantes de precio (ej. Juego de cadenas Unitario vs Conjunto)
+      const variantWrapper = document.getElementById("modal-variant-wrapper");
+      const variantOptions = document.getElementById("modal-variant-options");
+
+      if (Array.isArray(product.opcionesPrecio)) {
+        variantWrapper.classList.remove("hidden");
+        renderModalVariants();
+      } else {
+        variantWrapper.classList.add("hidden");
+        variantOptions.innerHTML = "";
+        document.getElementById("modal-price").textContent = formatLempiras(product.precio);
+      }
+
+      updateModalWhatsAppLink();
+
+      const modal = document.getElementById("product-modal");
+      modal.classList.remove("hidden");
+      modal.classList.add("flex");
+      document.body.style.overflow = "hidden";
+      lucide.createIcons();
+    }
+
+    function renderModalVariants() {
+      const product = state.activeModalProduct;
+      if (!product || !product.opcionesPrecio) return;
+
+      const variantOptions = document.getElementById("modal-variant-options");
+      variantOptions.innerHTML = product.opcionesPrecio.map((opt, idx) => {
+        const isSelected = idx === state.activeModalVariantIndex;
+        return `
+          <button
+            type="button"
+            onclick="selectModalVariant(${idx})"
+            class="p-3 rounded-xl border text-left transition-all ${
+              isSelected
+                ? "border-obsidian bg-obsidian text-ivory shadow-sm"
+                : "border-champagne/30 bg-ivory text-obsidian hover:border-champagne"
+            }"
+          >
+            <span class="block text-[11px] ${isSelected ? "text-champagneLight" : "text-stoneMuted"}">${opt.etiqueta}</span>
+            <span class="block text-sm font-bold mt-0.5">${formatLempiras(opt.precio)}</span>
+          </button>
+        `;
+      }).join("");
+
+      const selectedOpt = product.opcionesPrecio[state.activeModalVariantIndex];
+      document.getElementById("modal-price").textContent = formatLempiras(selectedOpt.precio);
+      updateModalWhatsAppLink();
+    }
+
+    function selectModalVariant(idx) {
+      state.activeModalVariantIndex = idx;
+      renderModalVariants();
+    }
+
+    function updateModalWhatsAppLink() {
+      const p = state.activeModalProduct;
+      if (!p) return;
+
+      let priceLabel = formatLempiras(p.precio);
+      let variantNote = "";
+      if (Array.isArray(p.opcionesPrecio)) {
+        const opt = p.opcionesPrecio[state.activeModalVariantIndex];
+        priceLabel = formatLempiras(opt.precio);
+        variantNote = ` (${opt.etiqueta})`;
+      }
+
+      const msg = `Hola 😊 Me interesa cotizar y conocer disponibilidad de la siguiente pieza de Claribella Joyería:\n• ${p.nombre}${variantNote} (${p.categoria})\n• Modelo: ${p.modelo} | Material: ${p.material} | Marca: ${p.marca}\n• Precio: ${priceLabel}\n¿Me confirmas disponibilidad y próximos pasos?`;
+      document.getElementById("modal-wa-btn").href = `https://wa.me/${WHATSAPP_PHONE}?text=${encodeURIComponent(msg)}`;
+    }
+
+    function closeProductModal() {
+      const modal = document.getElementById("product-modal");
+      modal.classList.add("hidden");
+      modal.classList.remove("flex");
+      document.body.style.overflow = "";
+      state.activeModalProduct = null;
+    }
+
+    function addFromModal() {
+      if (!state.activeModalProduct) return;
+      const p = state.activeModalProduct;
+
+      if (Array.isArray(p.opcionesPrecio)) {
+        const opt = p.opcionesPrecio[state.activeModalVariantIndex];
+        addItemToCart(p, opt.precio, opt.etiqueta);
+      } else {
+        addItemToCart(p, p.precio, null);
+      }
+      closeProductModal();
+    }
+
+    /**
+     * ==================== GESTIÓN DEL CARRITO + LOCALSTORAGE ====================
+     */
+    function loadCartFromStorage() {
+      try {
+        const raw = localStorage.getItem(STORAGE_KEY);
+        if (raw) {
+          const parsed = JSON.parse(raw);
+          if (Array.isArray(parsed)) {
+            state.cart = parsed;
+          }
+        }
+      } catch (err) {
+        console.warn("No se pudo leer el carrito de localStorage:", err);
+        state.cart = [];
+      }
+    }
+
+    function saveCartToStorage() {
+      try {
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(state.cart));
+      } catch (err) {
+        console.warn("No se pudo guardar el carrito en localStorage:", err);
+      }
+    }
+
+    function quickAddToCart(uid) {
+      const p = CATALOG_DATA.find((item) => item.uid === uid);
+      if (!p) return;
+
+      // Si tiene opciones (Juego de cadenas), abrimos modal para que elija Unitario o Conjunto con claridad
+      if (Array.isArray(p.opcionesPrecio)) {
+        openProductModal(uid);
+        return;
+      }
+
+      addItemToCart(p, p.precio, null);
+    }
+
+    function addItemToCart(product, unitPrice, variantLabel) {
+      const cartKey = `${product.uid}-${variantLabel || "base"}`;
+      const existing = state.cart.find((c) => c.cartKey === cartKey);
+
+      if (existing) {
+        existing.cantidad += 1;
+      } else {
+        state.cart.push({
+          cartKey,
+          uid: product.uid,
+          id: product.id,
+          categoria: product.categoria,
+          nombre: product.nombre,
+          marca: product.marca,
+          modelo: product.modelo,
+          material: product.material,
+          foto: product.foto,
+          variante: variantLabel,
+          precioUnitario: unitPrice,
+          cantidad: 1
+        });
+      }
+
+      saveCartToStorage();
+      renderCart();
+      showToast(`"${product.nombre}" agregado a tu selección`);
+    }
+
+    function updateCartQuantity(cartKey, delta) {
+      const idx = state.cart.findIndex((c) => c.cartKey === cartKey);
+      if (idx === -1) return;
+
+      state.cart[idx].cantidad += delta;
+      if (state.cart[idx].cantidad <= 0) {
+        state.cart.splice(idx, 1);
+      }
+
+      saveCartToStorage();
+      renderCart();
+    }
+
+    function removeCartItem(cartKey) {
+      state.cart = state.cart.filter((c) => c.cartKey !== cartKey);
+      saveCartToStorage();
+      renderCart();
+    }
+
+    function renderCart() {
+      const container = document.getElementById("cart-items-container");
+      const badge = document.getElementById("cart-badge");
+      const subtotalEl = document.getElementById("cart-subtotal");
+      const totalEl = document.getElementById("cart-total");
+      const checkoutBtn = document.getElementById("checkout-wa-btn");
+
+      const totalUnits = state.cart.reduce((sum, item) => sum + item.cantidad, 0);
+      const totalAmount = state.cart.reduce((sum, item) => sum + item.precioUnitario * item.cantidad, 0);
+
+      badge.textContent = totalUnits;
+      subtotalEl.textContent = formatLempiras(totalAmount);
+      totalEl.textContent = formatLempiras(totalAmount);
+      checkoutBtn.disabled = state.cart.length === 0;
+
+      if (state.cart.length === 0) {
+        container.innerHTML = `
+          <div class="h-full flex flex-col items-center justify-center text-center py-12 px-4">
+            <div class="w-16 h-16 rounded-full bg-cream text-champagneDark flex items-center justify-center mb-4">
+              <i data-lucide="shopping-bag" class="w-7 h-7"></i>
+            </div>
+            <h4 class="font-editorial text-2xl font-bold text-obsidian">Tu carrito está vacío</h4>
+            <p class="text-xs text-stoneMuted max-w-xs mt-1.5 mb-6 leading-relaxed">
+              Explora nuestros aritos, cadenas, relojes y anillos en oro y plata para armar tu cotización personalizada.
+            </p>
+            <button
+              onclick="toggleCart(false); document.getElementById('catalogo').scrollIntoView({behavior:'smooth'})"
+              class="px-6 py-2.5 rounded-full bg-obsidian text-ivory text-xs font-semibold hover:bg-charcoal transition-colors"
+            >
+              Explorar catálogo
+            </button>
+          </div>
+        `;
+        lucide.createIcons();
+        return;
+      }
+
+      container.innerHTML = state.cart.map((item) => {
+        const lineTotal = item.precioUnitario * item.cantidad;
+        return `
+          <div class="bg-white p-4 rounded-2xl border border-champagne/20 shadow-xs flex gap-3.5">
+            <img
+              src="${item.foto}"
+              alt="${item.nombre}"
+              onerror="handleImgError(this, '${item.nombre}')"
+              class="w-20 h-20 rounded-xl object-cover bg-cream shrink-0 border border-cream"
+            />
+            <div class="flex-1 min-w-0">
+              <div class="flex items-start justify-between gap-2">
+                <div>
+                  <span class="text-[10px] font-bold uppercase tracking-wider text-champagneDark">${item.categoria} • ${item.marca}</span>
+                  <h4 class="font-editorial text-lg font-bold text-obsidian leading-tight truncate">
+                    ${item.nombre} ${item.variante ? `(${item.variante})` : ""}
+                  </h4>
+                </div>
+                <button
+                  onclick="removeCartItem('${item.cartKey}')"
+                  aria-label="Eliminar artículo"
+                  class="text-stoneMuted hover:text-red-600 p-1 transition-colors"
+                >
+                  <i data-lucide="trash-2" class="w-4 h-4"></i>
+                </button>
+              </div>
+
+              <p class="text-[11px] text-stoneMuted mt-0.5">Modelo: ${item.modelo} • ${item.material}</p>
+              <p class="text-[10px] text-stoneMuted">ID: ${item.id}</p>
+
+              <div class="flex items-center justify-between mt-3 pt-2 border-t border-cream">
+                <div class="inline-flex items-center rounded-lg border border-champagne/30 bg-ivory">
+                  <button
+                    onclick="updateCartQuantity('${item.cartKey}', -1)"
+                    aria-label="Disminuir cantidad"
+                    class="w-7 h-7 flex items-center justify-center text-obsidian hover:bg-cream rounded-l-lg"
+                  >−</button>
+                  <span class="px-2.5 text-xs font-bold text-obsidian">${item.cantidad}</span>
+                  <button
+                    onclick="updateCartQuantity('${item.cartKey}', 1)"
+                    aria-label="Aumentar cantidad"
+                    class="w-7 h-7 flex items-center justify-center text-obsidian hover:bg-cream rounded-r-lg"
+                  >+</button>
+                </div>
+                <span class="text-sm font-bold text-obsidian">${formatLempiras(lineTotal)}</span>
+              </div>
+            </div>
+          </div>
+        `;
+      }).join("");
+
+      lucide.createIcons();
+    }
+
+    function toggleCart(open) {
+      const overlay = document.getElementById("cart-overlay");
+      const drawer = document.getElementById("cart-drawer");
+
+      if (open) {
+        overlay.classList.remove("hidden");
+        requestAnimationFrame(() => {
+          drawer.classList.remove("translate-x-full");
+        });
+        document.body.style.overflow = "hidden";
+      } else {
+        drawer.classList.add("translate-x-full");
+        setTimeout(() => {
+          overlay.classList.add("hidden");
+          document.body.style.overflow = "";
+        }, 280);
+      }
+    }
+
+    /**
+     * ==================== FLUJO CHECKOUT WHATSAPP BUSINESS ====================
+     * Genera enlace oficial https://wa.me/50496005320?text= correctamente URL-encoded
+     */
+    function finalizeOrderWhatsApp() {
+      if (state.cart.length === 0) return;
+
+      const totalAmount = state.cart.reduce((sum, item) => sum + item.precioUnitario * item.cantidad, 0);
+
+      const itemsLines = state.cart.map((item, index) => {
+        const variantStr = item.variante ? ` [${item.variante}]` : "";
+        const subtotalItem = formatLempiras(item.precioUnitario * item.cantidad);
+        return `${index + 1}. *${item.nombre}${variantStr}* (${item.categoria})\n   - Marca: ${item.marca} | Modelo: ${item.modelo}\n   - Material: ${item.material} | Código/ID: ${item.id}\n   - Cantidad: ${item.cantidad} x ${formatLempiras(item.precioUnitario)} = *${subtotalItem}*`;
+      }).join("\n\n");
+
+      const message =
+        `Hola 😊 Me interesa cotizar y conocer disponibilidad de los artículos de joyería que vi en su web de *Claribella Joyería*:\n\n` +
+        `📋 *DETALLE DE MI SELECCIÓN:*\n` +
+        `${itemsLines}\n\n` +
+        `💰 *Total referencial:* ${formatLempiras(totalAmount)}\n\n` +
+        `¿Me confirmas disponibilidad y próximos pasos? Quedo atento(a) para coordinar una llamada o visita. ¡Muchas gracias! ✨`;
+
+      const waUrl = `https://wa.me/${WHATSAPP_PHONE}?text=${encodeURIComponent(message)}`;
+      window.open(waUrl, "_blank", "noopener,noreferrer");
+    }
+
+    /**
+     * ==================== FORMULARIO CONTACTO ====================
+     */
+    function handleContactSubmit(event) {
+      event.preventDefault();
+      const name = document.getElementById("contact-name").value.trim();
+      const phone = document.getElementById("contact-phone").value.trim();
+      const interest = document.getElementById("contact-interest").value;
+      const msg = document.getElementById("contact-message").value.trim();
+
+      const feedback = document.getElementById("contact-feedback");
+      feedback.classList.remove("hidden");
+      feedback.innerHTML = `
+        <p class="font-semibold">¡Gracias por escribirnos, ${name}!</p>
+        <p class="text-xs mt-1">Hemos registrado tu consulta sobre <strong>${interest}</strong>. Si deseas respuesta inmediata, también puedes enviarla directo a nuestro WhatsApp Business:</p>
+        <a
+          href="https://wa.me/${WHATSAPP_PHONE}?text=${encodeURIComponent(`Hola 😊 Soy ${name} (${phone}). Me interesa consultar sobre: ${interest}. Mensaje: ${msg}`)}"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex items-center gap-1.5 mt-2.5 px-4 py-2 rounded-full bg-emerald-600 text-white text-xs font-semibold hover:bg-emerald-700"
+        >
+          <span>Abrir en WhatsApp Business</span>
+        </a>
+      `;
+
+      event.target.reset();
+    }
+
+    /**
+     * ==================== UTILIDADES UI ====================
+     */
+    function toggleMobileMenu(forceState) {
+      const menu = document.getElementById("mobile-menu");
+      if (typeof forceState === "boolean") {
+        menu.classList.toggle("hidden", !forceState);
+      } else {
+        menu.classList.toggle("hidden");
+      }
+    }
+
+    let toastTimeout;
+    function showToast(text) {
+      const toast = document.getElementById("toast-notification");
+      const msgEl = document.getElementById("toast-message");
+      msgEl.textContent = text;
+      toast.classList.remove("hidden");
+      toast.classList.add("flex");
+
+      clearTimeout(toastTimeout);
+      toastTimeout = setTimeout(() => {
+        toast.classList.add("hidden");
+        toast.classList.remove("flex");
+      }, 2600);
+    }
+
+    /**
+     * ==================== CHATBOT VIRTUAL IA (CLARA) ====================
+     */
+    function toggleChatbot() {
+      const win = document.getElementById("chatbot-window");
+      const isHidden = win.classList.contains("hidden");
+      if (isHidden) {
+        win.classList.remove("hidden");
+        win.classList.add("flex");
+        document.getElementById("chat-input").focus();
+      } else {
+        win.classList.add("hidden");
+        win.classList.remove("flex");
+      }
+      lucide.createIcons();
+    }
+
+    function sendQuickQuestion(topic) {
+      appendUserMessage(topic);
+      respondBotWithDelay(topic);
+    }
+
+    function handleChatSubmit(e) {
+      e.preventDefault();
+      const input = document.getElementById("chat-input");
+      const text = input.value.trim();
+      if (!text) return;
+
+      appendUserMessage(text);
+      input.value = "";
+      respondBotWithDelay(text);
+    }
+
+    function appendUserMessage(text) {
+      const container = document.getElementById("chat-messages");
+      const bubble = document.createElement("div");
+      bubble.className = "flex justify-end";
+      bubble.innerHTML = `
+        <div class="bg-obsidian text-ivory rounded-2xl rounded-tr-none px-4 py-2.5 text-xs sm:text-sm max-w-[82%] shadow-xs leading-relaxed">
+          ${escapeHtml(text)}
+        </div>
+      `;
+      container.appendChild(bubble);
+      container.scrollTop = container.scrollHeight;
+    }
+
+    function respondBotWithDelay(userText) {
+      const container = document.getElementById("chat-messages");
+
+      // Indicador "escribiendo..."
+      const typingId = "typing-" + Date.now();
+      const typingEl = document.createElement("div");
+      typingEl.id = typingId;
+      typingEl.className = "flex items-start gap-2.5";
+      typingEl.innerHTML = `
+        <div class="w-7 h-7 rounded-full bg-obsidian text-champagne flex items-center justify-center shrink-0 mt-0.5">
+          <i data-lucide="gem" class="w-3.5 h-3.5"></i>
+        </div>
+        <div class="bg-white border border-champagne/20 rounded-2xl rounded-tl-none px-4 py-3 flex items-center gap-1">
+          <span class="w-1.5 h-1.5 rounded-full bg-champagneDark typing-dot"></span>
+          <span class="w-1.5 h-1.5 rounded-full bg-champagneDark typing-dot"></span>
+          <span class="w-1.5 h-1.5 rounded-full bg-champagneDark typing-dot"></span>
+        </div>
+      `;
+      container.appendChild(typingEl);
+      container.scrollTop = container.scrollHeight;
+      lucide.createIcons();
+
+      setTimeout(() => {
+        const el = document.getElementById(typingId);
+        if (el) el.remove();
+
+        const replyHtml = generateBotResponse(userText);
+        const botBubble = document.createElement("div");
+        botBubble.className = "flex items-start gap-2.5 animate-fade-up";
+        botBubble.innerHTML = `
+          <div class="w-7 h-7 rounded-full bg-obsidian text-champagne flex items-center justify-center shrink-0 mt-0.5">
+            <i data-lucide="gem" class="w-3.5 h-3.5"></i>
+          </div>
+          <div class="bg-white border border-champagne/20 rounded-2xl rounded-tl-none px-4 py-3 text-xs sm:text-sm text-obsidian shadow-xs leading-relaxed max-w-[85%]">
+            ${replyHtml}
+          </div>
+        `;
+        container.appendChild(botBubble);
+        container.scrollTop = container.scrollHeight;
+        lucide.createIcons();
+      }, 650);
+    }
+
+    /**
+     * Motor de respuestas inteligentes por intención (Horarios, Disponibilidad, Promociones, Entregas, Productos, Contacto, Soporte, Seguimiento)
+     */
+    function generateBotResponse(rawInput) {
+      const q = rawInput.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+
+      if (q.includes("horario") || q.includes("hora") || q.includes("abierto") || q.includes("atienden")) {
+        return `🕒 <strong>Nuestros Horarios en Honduras:</strong><br/>• Lunes a Sábado: <strong>9:00 AM a 6:30 PM</strong>.<br/>• Domingos: Atención personalizada y citas previas vía WhatsApp Business al <strong>+504 9600-5320</strong>.`;
+      }
+
+      if (q.includes("disponib") || q.includes("stock") || q.includes("hay") || q.includes("existencia")) {
+        return `✅ <strong>Disponibilidad Actual:</strong><br/>Nuestras piezas publicadas en catálogo (Anillos Juvenil, Collar Diamante, Juego de cadenas Clásicas, Reloj para Caballero y Aritos Zafiro Azul amor) cuentan con estado <strong>Disponible</strong>. Agrega tus favoritas al carrito para confirmar reserva inmediata por WhatsApp.`;
+      }
+
+      if (q.includes("promocion") || q.includes("descuento") || q.includes("oferta") || q.includes("conjunto")) {
+        return `🎁 <strong>Beneficios y Presentaciones Especiales:</strong><br/>En nuestro <strong>Juego de cadenas (Modelo Clásicas, Oro)</strong> puedes elegir entre presentación <strong>Unitario (L 7,000)</strong> o el <strong>Conjunto completo (L 32,000)</strong>. Además, ofrecemos asesoría sin costo y empaque de regalo de lujo en todas tus compras.`;
+      }
+
+      if (q.includes("entrega") || q.includes("envio") || q.includes("domicilio") || q.includes("tegucigalpa") || q.includes("san pedro")) {
+        return `🚚 <strong>Entregas y Envíos en Honduras:</strong><br/>Realizamos entregas aseguradas en <strong>Tegucigalpa, San Pedro Sula</strong> y envíos protegidos a nivel nacional. Coordinamos contigo la hora, punto de entrega o visita directamente por WhatsApp.`;
+      }
+
+      if (q.includes("producto") || q.includes("catalogo") || q.includes("precio") || q.includes("anillo") || q.includes("collar") || q.includes("cadena") || q.includes("reloj") || q.includes("arito")) {
+        return `💎 <strong>Catálogo Oficial Claribella:</strong><br/>• <strong>Anillos (Juvenil)</strong> — Oro y Plata: <strong>L 550</strong><br/>• <strong>Collar Diamante (Gota de agua)</strong> — Oro Rosa con Diamante: <strong>L 12,000</strong><br/>• <strong>Juego de cadenas (Clásicas)</strong> — Oro: <strong>L 7,000</strong> (Unitario) / <strong>L 32,000</strong> (Conjunto)<br/>• <strong>Reloj para Caballero (Clásico)</strong> — Oro Italiano: <strong>L 25,000</strong><br/>• <strong>Aritos Zafiro Azul amor</strong> — Oro blanco Italiano: <strong>L 8,000</strong>`;
+      }
+
+      if (q.includes("seguimiento") || q.includes("pedido") || q.includes("rastreo") || q.includes("orden")) {
+        return `📦 <strong>Seguimiento de Pedidos:</strong><br/>Como nuestras reservas se gestionan de forma personalizada, puedes consultar el estatus exacto de tu entrega escribiendo directamente a nuestro asesor en WhatsApp.<br/><a href="https://wa.me/${WHATSAPP_PHONE}?text=${encodeURIComponent("Hola 😊 Quisiera consultar el seguimiento de mi pedido en Claribella Joyería.")}" target="_blank" class="inline-block mt-2 text-emerald-700 font-bold underline">Consultar estatus por WhatsApp →</a>`;
+      }
+
+      if (q.includes("soporte") || q.includes("garantia") || q.includes("autenticidad") || q.includes("cuidado") || q.includes("tecnico")) {
+        return `🛡️ <strong>Garantía y Soporte Claribella:</strong><br/>Todas nuestras joyas cuentan con respaldo de autenticidad en sus materiales (Oro, Oro Italiano, Oro Blanco Italiano, Oro Rosa y Plata). Si necesitas recomendaciones de limpieza o mantenimiento, nuestro equipo te asesora sin costo.`;
+      }
+
+      if (q.includes("contacto") || q.includes("telefono") || q.includes("whatsapp") || q.includes("numero") || q.includes("ubicacion")) {
+        return `📞 <strong>Contacto Directo:</strong><br/>Escríbenos o llámanos vía WhatsApp Business al <strong>+504 9600-5320</strong>.<br/><a href="https://wa.me/${WHATSAPP_PHONE}?text=${encodeURIComponent("Hola 😊 Me gustaría hablar con un asesor de Claribella Joyería.")}" target="_blank" class="inline-block mt-2 px-3 py-1.5 rounded-full bg-emerald-600 text-white text-xs font-semibold">Abrir WhatsApp ahora</a>`;
+      }
+
+      return `✨ ¡Con gusto te ayudo! Puedo brindarte información sobre <strong>productos y precios en Lempiras</strong>, <strong>disponibilidad</strong>, <strong>horarios</strong>, <strong>entregas en Honduras</strong>, <strong>garantía</strong> o <strong>seguimiento de pedidos</strong>. También puedes hablar directo con un asesor al <a href="https://wa.me/${WHATSAPP_PHONE}" target="_blank" class="text-champagneDark font-bold underline">+504 9600-5320</a>.`;
+    }
+
+    function escapeHtml(str) {
+      return str.replace(/[&<>"']/g, (m) => ({
+        "&": "&amp;",
+        "<": "&lt;",
+        ">": "&gt;",
+        '"': "&quot;",
+        "'": "&#39;"
+      }[m]));
+    }
+  </script>
+</body>
+</html>
